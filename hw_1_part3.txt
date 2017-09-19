@@ -1,0 +1,93 @@
+DATA OF RUNNING TESTS IN HW_1 FILE | ANSWERS ARE BASED ON TESTING DATA
+Starting Uninformed Search
+[1][2][3]
+[4][5][6]
+[7][ ][8]
+Start
+Total Moves Needed 1
+Starting Informed Search
+[1][2][3]
+[4][5][6]
+[7][ ][8]
+Start
+Total Moves Needed 1
+Uninformed time: 0.0
+Informed time: 0.0
+Starting Uninformed Search
+[1][ ][2]
+[3][4][5]
+[6][7][8]
+Reached limit of moves
+Uninformed time: 0.026
+Starting Informed Search
+[1][ ][2]
+[3][4][5]
+[6][7][8]
+Reached limit of moves
+Informed time: 0.042
+Starting Uninformed Search
+[1][2][3]
+[4][5][6]
+[7][ ][8]
+Start
+Total Moves Needed 1
+Starting Informed Search
+[1][2][3]
+[4][5][6]
+[7][ ][8]
+Start
+Total Moves Needed 1
+Starting Informed Search (2.0)
+[1][2][3]
+[4][5][6]
+[7][ ][8]
+Start
+Total Moves Needed 1
+Uninformed time: 0.001
+Informed bad time: 0.0
+Informed time: 0.0
+Starting Uninformed Search
+[8][ ][6]
+[5][4][7]
+[2][3][1]
+Start
+Total Moves Needed 19019
+Starting Informed Search
+[8][ ][6]
+[5][4][7]
+[2][3][1]
+Start
+Total Moves Needed 65
+Starting Informed Search (2.0)
+[8][ ][6]
+[5][4][7]
+[2][3][1]
+Start
+Total Moves Needed 265
+Uninformed time: 1.093
+Informed bad time: 2.708
+Informed time: 0.016
+Starting Uninformed Search
+[ ][6][7]
+[5][4][8]
+[2][3][1]
+Start
+Total Moves Needed 49504
+Starting Informed Search
+[ ][6][7]
+[5][4][8]
+[2][3][1]
+Start
+Total Moves Needed 78
+Starting Informed Search (2.0)
+[ ][6][7]
+[5][4][8]
+[2][3][1]
+Start
+Total Moves Needed 80
+Uninformed time: 2.875
+Informed bad time: 0.076
+Informed time: 0.063
+
+1) What corresponds to problem difficulty for this domain?
+-The difficulty of this problem for our domain of 8-puzzle 3x3 board is that the amount of possible moves and states is N! for nxn board. When testing harder boards the amount of time to find an optimal path increases. In comparision between BFS and the A* informed searches the difference in time is drastic. The hueristic of the first A* computes the Manhatten distance between where the item(ex: 4) needs to be for the goal state. Which helps lead the program in the correct direction eliminating moves that would take it farther away from the goal state. While the BFS will try every possible path until it reaches the goal state and return the most optimal path given that one exists. Therefore, when the boards become harder to solve the time complexity/needed to find a solution ramps up by far in BFS compared to A*. The second heuristic finds the sum of the difference between the goal state of the item and where the currrent state is. Which proves to be worse then just finding the exact distance between the two stateNodes.
